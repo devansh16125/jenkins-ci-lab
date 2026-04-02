@@ -4,4 +4,4 @@ def multiply(a, b):
 # Simple test
 if __name__ == "__main__":
     assert multiply(2, 3) == 6
-print("Trigger again 🔥")
+print("Final trigger 🔥")

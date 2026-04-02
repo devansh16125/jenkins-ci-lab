@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Build & Test') {
+        stage('Run Test') {
             steps {
-                echo 'Running CI Pipeline...'
-                sh 'python3 test.py'
+                echo "Running test..."
+                bat 'python test.py'
             }
         }
     }

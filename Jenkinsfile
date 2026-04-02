@@ -2,14 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Code') {
+        stage('Build & Test') {
             steps {
-                git 'https://github.com/devansh16125/jenkins-ci-lab.git'
-            }
-        }
-
-        stage('Run Test') {
-            steps {
+                echo 'Running CI Pipeline...'
                 sh 'python3 test.py'
             }
         }
